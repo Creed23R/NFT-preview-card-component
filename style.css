@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --softBlueLine: hsl(215, 51%, 70%, .5);
+    --softBlue: hsl(215, 51%, 70%);
+    --cyanEye: hsl(178, 100%, 50%, .5);
+    --cyan: hsl(178, 100%, 50%);
+    --veryDarkBlueMain: hsl(217, 54%, 11%);
+    --veryDarkBlueCard: hsl(216, 50%, 16%);
+    --veryDarkBlueLine: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--veryDarkBlueMain);
+    font-family: 'Outfit', sans-serif;
+}
+
+.main-container {
+    background-color: var(--veryDarkBlueCard);
+    margin: 20px auto;
+    width: 300px;
+    height: 530px;
+    border-radius: 10px;
+    padding: 26px;
+}
+
+.image {
+    background-image: url(./images/image-equilibrium.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.eye-image {
+    opacity: 0;
+    background-color: var(--cyanEye);
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.eye-image:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 20px 0;
+    color: var(--white);
+    font-size: 1.4em;
+}
+
+.title:hover{
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+p {
+    color: var(--softBlue);
+}
+
+.details-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.value {
+    color: var(--cyan);
+    display: flex;
+    align-items: center;
+}
+
+.value img {
+    margin: 0 10px 0 0;
+}
+
+.date {
+    color: var(--softBlue);
+    display: flex;
+    align-items: center;
+}
+
+.date img {
+    margin: 0 10px 0 0;
+}
+
+.line {
+    border-top: .5px solid var(--softBlueLine);
+}
+
+.creator-container {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.photo {
+    background-image: url(./images/image-avatar.png);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 20px 0 0;
+}
+
+.creator {
+    color: var(--softBlue);
+    font-size: .9em;
+}
+
+
+.creator span{
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --CyanEye: rgba(0, 255, 247, 0.5);
+    --Cyan: rgba(0, 255, 247);
+    --VeryDarkBlueMain: hsl(217, 54%, 11%);
+    --veryDarkBlueCard: hsl(216, 50%, 16%);
+    --veryDarkBlueLine: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--VeryDarkBlueMain);
+}
+
+.main-container {
+    background-color: var(--veryDarkBlueCard);
+    width: 300px;
+    height: 520px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 26px;
+}
+
+.img-container {
+    background-image: url(./images/image-equilibrium.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.eye-image {
+    opacity: 0;
+    background-color: var(--CyanEye);
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.eye-image:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.main-container h1 {
+    color: var(--white);
+    font-size: 1.3em;
+    margin: 20px 0;
+}
+
+
+.description {
+    color: var(--softBlue);
+    font-size: 1em;
+    margin: 0px 20px 20px 0px;
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.value {
+    display: flex;
+    align-items: center;
+}
+
+.value img{
+    margin: 0 10px 0 0;
+}
+.value span {
+    color: var(--Cyan);
+}
+
+.date {
+    display: flex;
+    align-items: center;
+}
+
+.date img{
+    margin: 0 10px 0 0;
+}
+.date span {
+    color: var(--softBlue);
+}
+
+.line {
+    border-top: .5px solid var(--softBlue);
+}
+
+.creator-container {
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+}
+
+.photo {
+    background-image: url(./images/image-avatar.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    width: 40px;
+    height: 40px;
+    margin: 0 16px 0 0;
+}
+
+.creator {
+    color: var(--softBlue);
+    font-size: 0.85em;
+}
+
+
+.creator span {
+    margin-left: 2px;
+    color: var(--white);
+}
+
+
+.title:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
+
+/* @media(min-width:900px){
+    .main-container{
+        width: 354px;
+        height: 600px;
+    }
+    .img-container{
+        width: 300px;
+        height: 300px;
+    }
+
+    .description{
+        font-size: 1em;
+    }
+} */
