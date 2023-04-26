@@ -16,19 +16,28 @@
     --white: hsl(0, 0%, 100%);
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     background-color: var(--veryDarkBlueMain);
     font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-container {
     background-color: var(--veryDarkBlueCard);
-    margin: 10px auto;
     width: 300px;
     height: 530px;
     border-radius: 10px;
     padding: 26px;
+    box-shadow: 5px 5px 22px 0px hsla(0, 0%, 0%, 0.2);
 }
+
 
 .image {
     background-image: url(./images/image-equilibrium.jpg);
@@ -130,10 +139,6 @@ p {
 
 @media(min-width:900px) {
     body {
-        zoom: 0.95;
-    }
-
-    .main-container {
-        margin: 30px auto;
-    }
+        zoom: 0.85;
+    } 
 }
